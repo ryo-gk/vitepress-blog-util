@@ -1,0 +1,26 @@
+{
+  "name": "vitepress-blog-util",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview",
+    "build:lib": "tsc -p ."
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./scripts": "./dist/scripts/post.js"
+  },
+  "devDependencies": {
+    "@types/node": "^16.7.13",
+    "fs-extra": "^10.0.0",
+    "gray-matter": "^4.0.3",
+    "@vitejs/plugin-vue": "^1.6.1",
+    "@vue/compiler-sfc": "^3.2.6",
+    "typescript": "^4.3.2",
+    "vite": "^2.5.4",
+    "vitepress": "^0.16.1",
+    "vue-tsc": "^0.2.2"
+  }
+}
