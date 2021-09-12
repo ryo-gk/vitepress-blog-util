@@ -30,5 +30,5 @@ function extractFileName(fileName: string) {
 }
 
 module.exports = {
-  getMdList: getPostList
+  getPostList
 }
