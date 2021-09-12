@@ -1,6 +1,6 @@
 {
   "name": "vitepress-blog-util",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The utility for creating blog by vitepress",
   "keywords": [
     "vitepress", "blog"
