@@ -23,17 +23,17 @@ module.exports = {
 
 ### `usePostList()`
 This can be used to get the list of blog posts.
-Post has the belows.
+Post has the below.
 
 - `path` : The path of the post's file.
 - `content` : The content of the post.
 - `frontmatter` : The frontmatter of the post.
 
 ### `filterPostList(postList, callback)`
-This can be used to filter post list by the frontmatter.
+This can be used to filter post lists by the frontmatter.
 
-You need to pass post list to 1st arg, and pass callback function to 2nd arg.
-The callback should accept frontmatter as arg, and return boolean.
+You need to pass the post list to the 1st arg, and pass a callback function to the 2nd arg.
+The callback should accept the frontmatter object as arg, and return boolean.
 
 #### - Example
 ```js
