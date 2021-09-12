@@ -1,7 +1,19 @@
 {
   "name": "vitepress-blog-util",
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "description": "The utility for creating blog by vitepress",
+  "keywords": [
+    "vitepress", "blog"
+  ],
+  "homepage": "https://github.com/ryo-gk/vitepress-blog-util#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryo-gk/vitepress-blog-util.git"
+  },
+  "license": "MIT",
+  "author": "ryo-gk",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -12,6 +24,9 @@
     ".": "./dist/index.js",
     "./scripts": "./dist/scripts/post.js"
   },
+  "dependencies": {
+    "vitepress": "^0.16.1"
+  },
   "devDependencies": {
     "@types/node": "^16.7.13",
     "fs-extra": "^10.0.0",
@@ -20,7 +35,6 @@
     "@vue/compiler-sfc": "^3.2.6",
     "typescript": "^4.3.2",
     "vite": "^2.5.4",
-    "vitepress": "^0.16.1",
     "vue-tsc": "^0.2.2"
   }
 }
