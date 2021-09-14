@@ -1,4 +1,4 @@
-import { useData } from 'vitepress'
+import { Ref } from 'vue'
 
 export interface Post {
   path: string
@@ -6,8 +6,7 @@ export interface Post {
   frontmatter: Record<string, any>
 }
 
-export function usePostList(): Post[] {
-  const { theme } = useData()
+export function usePostList(theme: Ref<any>): Post[] {
   return theme.value.postList as Post[]
 }
 
