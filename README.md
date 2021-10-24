@@ -16,9 +16,21 @@ module.exports = {
   title: 'Title',
   description: 'Vitepress blog',
   themeConfig: {
-    postList: getPostList('pages/posts'),
+    postList: getPostList('./docs/posts'),
   },
 }
+```
+
+#### - Directory
+```
+|- docs
+ |- .vitepress
+ |- posts
+  |- sample1.md
+  |- sample2.md
+ |- index.md
+|- package.json
+|...
 ```
 
 ### `usePostList()`
